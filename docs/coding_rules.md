@@ -2,48 +2,7 @@
 
 > **Provenance.** This file is the human-facing copy of the
 > specification in `prompts/extraction_prompt.txt`, which is what the
-> extraction was actually generated under. The two must say the same
-> thing. They did not between the initial commit and 2026-08-27: the
-> exclusion clause for technical, operational, legal, credit,
-> settlement and financial-system risks had been misfiled from
-> section 6 into section 5, where it directly contradicted section 5's
-> own inclusion list and left section 6 without it. Human coders in
-> validation rounds 1 to 3 worked from the corrupted copy; the model
-> did not. The divergence originated at the revision that produced
-> version 1 of the prompt, which added the clause to the prompt's section 6
-> and to the codebook's section 5; see `prompts/README.md`. Check
-> this file against the prompt before any coding round.
->
-> The 2026-08-27 repair made two changes: it moved the misfiled clause
-> back to section 6, and it added to section 5 the override the prompt
-> has always carried ("unless systemic or stability-related concerns are
-> substantively addressed"), which this file had lacked since the early
-> draft.
-> One difference remains unrepaired: the prompt's general rules ask the
-> coder to distinguish current conditions from the forward-looking
-> outlook, with a worked example. That principle appears here inside
-> sections 2 and 4 but not among the general principles. It is left
-> alone because round 4 is already coded against version 2.
->
-> **Version 2, 2026-08-27.** Six decision rules were added below,
-> derived from the 119 disagreements between two independent coders
-> (`outputs/audit/adjudication_sheet.csv`). Sixty of those
-> disagreements reduced to those six rules; the remaining fifty-nine
-> were already decided by the repaired text above.
->
-> The rules were written by one of the two coders working alone, not by
-> the two together — see the header of
-> `docs/adjudication_protocol.md`. They are that coder's articulation of
-> a standard they had been applying, and that coder is the stricter of
-> the two.
->
-> The extraction in `outputs/extracted_signals/` was generated under
-> version 1, preserved byte-for-byte in
-> `prompts/extraction_prompt.txt`. The revised rules are mirrored in
-> `prompts/extraction_prompt_v2.txt` for any future extraction. **The
-> current model codes therefore predate these rules and were produced
-> without them**, which must be stated whenever the model is scored
-> against human codes made under version 2.
+> extraction was actually generated under. 
 
 ## Purpose
 

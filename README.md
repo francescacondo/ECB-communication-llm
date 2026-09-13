@@ -1,47 +1,35 @@
 # Extracting Economic Signals from ECB Communication with Large Language Models
 
-An LLM-based measurement pipeline for European Central Bank speeches,
-together with the validation evidence needed before its output can be
-used as an economic variable.
+This project builds and evaluates an LLM-based pipeline for extracting
+structured economic signals from European Central Bank speeches. The
+focus is on measurement: how text classifications can be constructed,
+validated, and assessed before being used as variables in economic
+analysis.
 
-Six signals are extracted from each speech under a fixed coding scheme:
+The corpus consists of 2,770 speeches from the ECB's official
+precompiled speech dataset, covering January 1999 to December 2025. Six
+variables are extracted from each speech under a fixed coding scheme:
 binary attention indicators for inflation, real activity, financial
-stability and uncertainty, and ternary directional outlook variables for
-inflation and growth. The corpus is the ECB's official precompiled
-speech dataset, 2,770 speeches from January 1999 to December 2025.
+stability, and uncertainty, together with ternary directional outlook
+measures for inflation and growth.
 
-The write-up is `measurement_note.tex`. It treats the extraction as an
-instrument and asks what has to be established before its output is
-usable: whether it reproduces human coding, how it fails when it fails,
-whether the failure can be corrected, whether the resulting series
-relate to euro-area macro data as economic reasoning predicts, and what
-the language model adds over a keyword dictionary.
+The project treats the LLM extraction as a measurement instrument rather
+than as observed data. The validation therefore examines how closely the
+classifications reproduce independent human coding, where and why
+disagreements arise, how classification error could be incorporated into
+aggregate measures, whether the resulting communication series behave
+as expected against euro-area macroeconomic data, and what contextual
+classification adds relative to a keyword-based benchmark.
 
-## Compiling the note
-
-    pdflatex measurement_note.tex
-
-Run it three times to settle the table of contents and cross-references.
-The figures it needs are committed in `figures/`, so no analysis has to
-be run first. `measurement_note.pdf` is the compiled result.
-
-Requires `multirow` and `listings` beyond a basic TeX distribution.
 
 ## The coding scheme
 
 `docs/coding_rules.md` is the codebook, at **version 2**.
 `prompts/extraction_prompt.txt` is the classification prompt at
-**version 1**, which is what the committed extraction ran under; it is
-preserved byte-for-byte and must not be edited.
+**version 1**, which is what the committed extraction ran under.
 `prompts/extraction_prompt_v2.txt` mirrors the revised codebook for a
-future extraction. Both prompts are reproduced in full in the note's
-appendices, and `docs/adjudication_protocol.md` records how coder
-disagreements were resolved into rules.
+future extraction.
 
-The model codes therefore predate the six decision rules added at
-version 2. Wherever the model is scored against human codes made under
-version 2, it is being held to a specification it was not given, and the
-note says so at each point.
 
 ## Running the pipeline
 
@@ -56,11 +44,19 @@ note says so at each point.
     python analysis/12_measures.py         # aggregated measures
     python src/download_macro.py           # euro-area macro series
     python src/download_salience_series.py # CISS and SPF dispersion
-    python analysis/13_external_validation.py
-    python analysis/16_dictionary_benchmark.py
+    python analysis/13_external_validation.py  # macro correlations
+    python analysis/16_dictionary_benchmark.py # LLM vs keyword dictionary
 
-Validation rounds, drawn once each with `ACTIVE_ROUND` set to the round
-being drawn:
+Supplementary analyses:
+
+    python analysis/21_alternative_inference.py # robustness of external validation
+    python analysis/22_local_projections.py     # local projections
+    python analysis/23_altavilla_factors.py     # monetary-policy surprise factors
+    python analysis/24_event_window_factors.py  # event-window analysis
+    python analysis/25_salience_validation.py   # salience-based validation
+
+Validation rounds, drawn once each with `ACTIVE_ROUND` set to the
+round being drawn (rounds 2, 3 and 4):
 
     python src/select_validation_sample.py # seeded blind sample and key
     python src/build_coding_sheet.py       # blind sheet and speech texts
@@ -68,36 +64,16 @@ being drawn:
     python analysis/18_coder_reliability.py
     python src/diff_prompts.py             # version 1 to version 2 rule diff
     python analysis/19_round4_ceiling.py
-    python analysis/25_salience_validation.py
 
-Order matters in two places. `analysis/12_measures.py` reads the error
+Order is important in:
+`analysis/12_measures.py` reads the error 
 rates written by `analysis/15_validation_stats.py` and fails without
 them, and `analysis/25_salience_validation.py` consumes output from both
 `13_external_validation.py` and `19_round4_ceiling.py`.
 
-Table 16 of the note lists the same order with the tables and figures
-each stage produces.
+The accompanying note (Table 17) lists the same order with the tables
+and figures each stage produces.
 
-## What is committed and what is not
-
-Committed: the note and its figures, the coding materials, the analysis
-code, the human coding in `data/human/`, the seeded validation-sample
-keys, and every derived result in `outputs/`.
-
-Not committed: the ECB speech text, in any form. That means the raw
-corpus, the extraction excerpts, the model output, and the audit
-coding sheets, which carry speech text alongside the codes. The corpus
-is downloaded programmatically by `src/download_data.py`; the
-extraction is regenerated only by re-running the model, which costs
-money and is not something to do incidentally.
-
-Consequently the analysis stages will not run end to end from a fresh
-clone. The results they produce are committed instead, so every number
-in the note can be checked against `outputs/` without re-running
-anything. The four supporting modules — `src/measurement_error.py`,
-`src/agreement.py`, `src/timeseries_stats.py` and
-`src/dictionary_signals.py` — hold the reusable statistical logic and
-are readable on their own.
 
 ## Dependencies
 
