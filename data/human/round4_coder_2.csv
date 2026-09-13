@@ -1,0 +1,51 @@
+speech_id,date,speaker,borderline_vars,notes,inflation_attention,inflation_outlook,growth_attention,growth_outlook,financial_stability_attention,uncertainty_attention
+ecb_1024,2009-07-13,Jean-Claude Trichet,growth_outlook,Current contraction followed by explicit gradual recovery; coded +1 on forward trajectory.,1,-1,1,1,1,0
+ecb_2117,2018-06-06,Peter Praet,,,1,1,1,1,1,0
+ecb_0893,2008-07-02,Gertrude Tumpel-Gugerell,,,0,0,0,0,0,0
+ecb_2678,2024-11-19,Frank Elderson,growth_attention,"Nature-related output effects are developed analysis, but mainly mechanisms rather than a macro baseline outlook.",0,0,1,0,1,0
+ecb_0292,2002-07-02,Willem F. Duisenberg,,,1,1,1,1,0,1
+ecb_0507,2005-03-10,Jean-Claude Trichet,growth_attention,"Growth benefits of integration are substantive but structural/mechanism-based, so outlook remains 0.",0,0,1,0,1,0
+ecb_0597,2006-03-16,Otmar Issing,,,0,0,0,0,0,0
+ecb_1657,2014-09-22,Mario Draghi,inflation_outlook,Inflation discussion contains weak dynamics and policy concern but no sufficiently dominant explicit forward direction.,1,0,1,-1,1,1
+ecb_0120,2000-03-23,Christian Noyer,inflation_outlook,Strategy discussion is substantive; directional inflation outlook is not clearly established.,1,0,1,1,0,0
+ecb_1372,2012-05-10,Peter Praet,,,1,0,1,-1,1,1
+ecb_1881,2016-10-06,Peter Praet,,,1,1,1,1,1,0
+ecb_2069,2018-02-01,Peter Praet,,,1,1,1,1,0,0
+ecb_0454,2004-09-28,Otmar Issing,,,0,0,0,0,0,0
+ecb_1504,2013-06-03,Benoît Cœuré,growth_attention,"Activity is discussed in global-liquidity/risk-sharing analysis, but not as a forward baseline.",0,0,1,0,1,0
+ecb_2427,2021-10-20,Frank Elderson,uncertainty_attention,Climate transition and physical-risk uncertainty materially shapes the supervisory argument.,0,0,0,0,1,1
+ecb_1794,2015-11-22,Vítor Constâncio,,,0,0,0,0,0,0
+ecb_2314,2020-06-10,Luis de Guindos,,,1,-1,1,-1,1,1
+ecb_1243,2011-04-12,Jürgen Stark,"inflation_outlook,growth_outlook",Main treatment is historical/conceptual crisis analysis rather than a current baseline outlook.,1,0,1,0,1,1
+ecb_1597,2014-02-18,Peter Praet,,,0,0,1,1,0,0
+ecb_1323,2011-11-08,Jürgen Stark,inflation_outlook,Price-stability discussion is substantive but no clear dominant forward inflation trajectory.,1,0,1,-1,1,1
+ecb_1010,2009-06-12,Jean-Claude Trichet,,,0,0,0,0,0,0
+ecb_1903,2016-11-17,Yves Mersch,financial_stability_attention,"Financial side-effects are developed enough to clear attention threshold, though not the central topic.",1,1,1,1,1,0
+ecb_2451,2022-01-11,Christine Lagarde,,,1,1,1,1,0,0
+ecb_0199,2001-04-04,Willem F. Duisenberg,growth_attention,Economic implications of e-economy/banking are analysed; no baseline growth trajectory.,0,0,1,0,1,0
+ecb_0996,2009-05-14,Lucas Papademos,,,1,-1,1,-1,1,1
+ecb_2223,2019-05-27,Benoît Cœuré,,,0,0,0,0,0,0
+ecb_1330,2011-11-23,Vítor Constâncio,growth_attention,"Macroeconomic imbalances and crisis effects are substantive, but no clear current forward growth baseline.",0,0,1,0,1,1
+ecb_0531,2005-06-03,Otmar Issing,,,1,0,1,0,0,0
+ecb_0871,2008-05-15,Lucas Papademos,growth_attention,"Growth determinants appear as developed analysis of the euro's international role, without outlook.",0,0,1,0,0,0
+ecb_1022,2009-07-06,Gertrude Tumpel-Gugerell,,,0,0,0,0,0,0
+ecb_2277,2019-11-28,Philip R. Lane,"inflation_outlook,growth_outlook","Long-run determinants and scenarios are analysed, not a near-term expected macro trajectory; uncertainty around r-star is material to the argument.",1,0,1,0,1,1
+ecb_1070,2009-12-07,Jean-Claude Trichet,,,1,-1,1,-1,1,1
+ecb_2053,2017-11-17,Mario Draghi,,,1,1,1,1,0,0
+ecb_1894,2016-11-04,Vítor Constâncio,"inflation_outlook,growth_outlook",Framework discussion is largely structural/hypothetical; no single baseline direction dominates.,1,0,1,0,1,1
+ecb_2144,2018-10-05,Luis de Guindos,growth_attention,Resilience and institutional reform have substantive activity implications but no baseline growth outlook.,0,0,1,0,1,0
+ecb_0172,2000-11-22,Christian Noyer,growth_attention,Growth effects of EU deepening/widening are developed but structural rather than forecast-based.,0,0,1,0,0,0
+ecb_2299,2020-02-26,Fabio Panetta,,,0,0,0,0,1,0
+ecb_0749,2007-06-28,José Manuel González-Páramo,uncertainty_attention,Assessment framework repeatedly emphasizes uncertainty/model limitations around system-wide stability.,0,0,0,0,1,1
+ecb_2209,2019-04-06,Yves Mersch,growth_outlook,"Potential growth weakness is a level/structural diagnosis; reform effects are mechanisms, not a baseline forecast.",0,0,1,0,0,0
+ecb_1450,2013-01-21,Benoît Cœuré,inflation_outlook,Inflation enters crisis-policy analysis but no clear directional forward inflation baseline.,1,0,1,-1,1,1
+ecb_2085,2018-03-09,Sabine Lautenschläger,,,0,0,0,0,0,0
+ecb_2087,2018-03-14,Benoît Cœuré,financial_stability_attention,Resilience architecture and crisis vulnerabilities clear the systemic-attention threshold.,0,0,1,0,1,0
+ecb_0999,2009-05-25,José Manuel González-Páramo,,,1,-1,1,-1,1,1
+ecb_1043,2009-10-05,Gertrude Tumpel-Gugerell,,,0,0,0,0,1,0
+ecb_2653,2024-09-26,Christine Lagarde,growth_attention,Technology-macroprudential channels include substantive macro effects but no expected growth path.,0,0,1,0,1,0
+ecb_1295,2011-08-27,Jean-Claude Trichet,inflation_outlook,"Inflation/price stability is developed, but the speech's directional forecast emphasis is mainly on growth.",1,0,1,1,1,1
+ecb_0525,2005-05-23,José Manuel González-Páramo,inflation_outlook,Inflation differentials are analysed conceptually/historically; no dominant aggregate forward inflation direction.,1,0,1,0,0,0
+ecb_1459,2013-02-15,Mario Draghi,,,0,0,1,1,0,0
+ecb_2514,2022-10-11,Philip R. Lane,,,1,1,1,-1,1,1
+ecb_2021,2017-09-25,Yves Mersch,growth_attention,References to activity are incidental to risk management; below substantive threshold.,1,1,0,0,1,0

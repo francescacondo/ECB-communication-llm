@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{Attention-weighted inflation outlook and euro-area macro outcomes}
+\label{tab:external-validation}
+\begin{tabular}{lccc}
+\toprule
+ & 1999-2011 & 2012-2025 & Difference \\
+\midrule
+HICP inflation & 0.305 & 0.251 & -0.054 \\
+& (0.194) & (0.229) & (0.304) \\
+\quad Quarters & 52 & 56 & 108 \\
+\addlinespace
+Deposit rate, 2q change & 0.196 & 0.480* & +0.284 \\
+& (0.198) & (0.275) & (0.342) \\
+\quad Quarters & 52 & 54 & 106 \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.86\textwidth}
+\vspace{0.6em}
+\footnotesize Pearson correlations between the attention-weighted inflation outlook and each macro series, quarterly. The policy-path variable is the change in the deposit facility rate over the following 2 quarters. Newey--West standard errors in parentheses; the bandwidth follows $\lfloor 4(T/100)^{2/9}\rfloor$, floored at the moving-average order implied by the overlapping differences. The difference column is the interaction coefficient from a pooled regression on within-era standardised data and equals the difference of the two correlations by construction. The 2012 break is imposed, not estimated. Confidence intervals are symmetric in the standardised slope and are therefore not constrained to $[-1,1]$; the moving-block bootstrap intervals reported in \texttt{external\_validation\_by\_era.csv} respect the bounds. $^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{minipage}
+\end{table}

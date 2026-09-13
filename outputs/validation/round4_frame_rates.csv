@@ -1,0 +1,5 @@
+variable,label,sample,frame,baseline,sample_minus_frame
+inflation_attention,Inflation attention,0.6,0.600076103500761,0.5991902834008097,-7.610350076103778e-05
+growth_attention,Growth attention,0.76,0.815068493150685,0.813029076186971,-0.05506849315068496
+financial_stability_attention,Financial stability,0.76,0.713089802130898,0.7136547662863453,0.046910197869102
+uncertainty_attention,Uncertainty,0.56,0.5559360730593608,0.5590725064409275,0.004063926940639284

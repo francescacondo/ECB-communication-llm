@@ -1,0 +1,77 @@
+You are extracting structured variables from European Central Bank communication for economic research.
+
+Classify the supplied ECB speech text using only the information contained in the supplied text. Do not use outside knowledge about the speaker, date, economic conditions, monetary-policy decisions, or subsequent events.
+
+The objective is measurement, not summarization.
+
+Return the following six variables:
+
+1. inflation_attention
+    * 1: inflation, price developments, price pressures, inflation expectations, or closely related inflation developments are substantively discussed.
+    * 0: they are not substantively discussed.
+    * A passing reference to inflation or price stability is not sufficient.
+2. inflation_outlook
+    * -1: the dominant forward-looking emphasis is disinflationary or points to downside inflation developments or risks.
+    * 0: the discussion is balanced, neutral, mixed, ambiguous, purely descriptive, or inflation is not substantively discussed.
+    * 1: the dominant forward-looking emphasis is inflationary or points to upside inflation developments or risks.
+    * Classify the direction of the forward-looking inflation outlook or dominant expected trajectory, not merely whether the current level of inflation is high or low.
+    * When near-term headline inflation and an explicitly stated medium-term or policy-relevant inflation outlook point in opposite directions, classify using the medium-term policy-relevant horizon. A transitory near-term movement does not overturn an explicit medium-term direction.
+    * If inflation_attention = 0, then inflation_outlook must equal 0.
+3. growth_attention
+    * 1: real economic activity, including GDP, output, demand, consumption, investment, recession, recovery, or closely related real-activity developments, is substantively discussed.
+    * 0: real economic activity is not substantively discussed.
+    * A passing reference is not sufficient.
+4. growth_outlook
+    * -1: the dominant forward-looking emphasis is weakening activity, deterioration, recessionary conditions, or downside growth risks.
+    * 0: the discussion is balanced, neutral, mixed, ambiguous, purely descriptive, or growth is not substantively discussed.
+    * 1: the dominant forward-looking emphasis is strengthening activity, recovery, improving conditions, or upside growth developments.
+    * Classify the direction of the forward-looking growth outlook or dominant expected trajectory, not merely whether the current level of economic activity is strong or weak.
+    * If growth_attention = 0, then growth_outlook must equal 0.
+5. financial_stability_attention
+    * 1: financial-system risks or resilience are substantively discussed, including banking-system vulnerabilities, solvency or liquidity stress, systemic risk, contagion, market stress, macroprudential risks, or financial fragility.
+    * 0: these issues are not substantively discussed.
+    * Do not classify ordinary references to financial markets, interest rates, or monetary-policy transmission as financial-stability discussion unless systemic or stability-related concerns are substantively addressed.
+    * Safety, security, settlement, payment-system continuity or operational resilience does not by itself constitute financial-stability attention. Code 1 only when the discussion is explicitly tied to system-wide impairment, contagion, banking-system resilience, macroprudential risk, or the capacity of financial intermediation to serve the economy.
+6. `uncertainty_attention`
+   - `1`: uncertainty, unpredictability, unusually wide risks, alternative scenarios, or uncertainty surrounding the economic outlook are substantively emphasized.
+   - `0`: they are not substantively emphasized.
+   - The mere occurrence of words such as "risk" or routine statements such as "risks are broadly balanced" is not sufficient.
+   - Do not code `1` merely because technical, operational, legal, credit, settlement, or financial-system risks are discussed. Such risks count as uncertainty attention only when the text substantively emphasizes uncertainty, unpredictability, unusually wide possible outcomes, or difficulty assessing the outlook.
+   - Acknowledged, intrinsic, methodological or routine forecast uncertainty is insufficient. Code 1 only when unpredictability, unusually wide outcomes, exceptional uncertainty, or uncertainty surrounding the economic outlook is itself emphasized, or materially shapes the economic or policy argument being made.
+   
+General rules:
+
+* Base every classification only on the supplied text.
+* Classify substantive economic discussion rather than keyword presence.
+* Do not infer views that are not supported by the text.
+* For outlook variables, classify the dominant expected direction rather than counting positive and negative words.
+* Distinguish current conditions from the forward-looking outlook. For example, weak current activity can coexist with a positive growth outlook if the text clearly emphasizes an expected recovery.
+* When forward-looking evidence is genuinely mixed or insufficient, use 0.
+* Code an attention variable 1 only when the construct is an object of developed analysis: several connected claims, a focused passage, or a material role in the argument. An isolated consequence, a mandate reference, an illustrative example or a passing mention is 0. In a very short speech, proportional centrality can satisfy the threshold.
+* Attention measures whether a construct is substantively analysed, not whether the speech offers a forecast about it. A developed conceptual, historical or simulation-based treatment receives attention 1 even when the associated outlook is 0.
+* A hypothetical scenario, a causal channel, the intended effect of a structural reform, a policy simulation or a backward-looking episode does not by itself establish an outlook direction. Assign +1 or -1 only when the speaker presents that direction as the expected or baseline forward trajectory, or as the clearly dominant forward risk assessment.
+* Do not summarize the speech.
+* Do not add variables, explanations, commentary, confidence scores, or additional text.
+* Return only the required structured output.
+
+Required output structure:
+
+{{
+“inflation_attention”: 0,
+“inflation_outlook”: 0,
+“growth_attention”: 0,
+“growth_outlook”: 0,
+“financial_stability_attention”: 0,
+“uncertainty_attention”: 0
+}}
+
+Speech metadata and text follow below.
+
+TITLE:
+{title}
+
+SUBTITLE:
+{subtitle}
+
+TEXT:
+{text}

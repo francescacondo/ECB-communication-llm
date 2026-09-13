@@ -1,0 +1,61 @@
+speech_id,date,speaker,stratum,inflation_attention,growth_attention,financial_stability_attention,uncertainty_attention,inflation_outlook,growth_outlook
+ecb_2010,2017-09-14,Yves Mersch,late_n2,0,1,1,0,0,1
+ecb_0834,2008-02-15,Jean-Claude Trichet,early_n3,1,1,0,1,1,0
+ecb_1431,2012-11-23,Mario Draghi,late_n3,0,1,1,1,0,-1
+ecb_0161,2000-10-16,Sirkka Hämäläinen,early_n2,0,1,1,0,0,1
+ecb_2197,2019-03-12,Sabine Lautenschläger,late_n1,0,0,1,0,0,0
+ecb_1455,2013-02-07,Benoît Cœuré,late_n2,0,1,1,0,0,0
+ecb_0164,2000-10-28,Willem F. Duisenberg,early_n3,1,0,1,1,-1,0
+ecb_1938,2017-03-22,Sabine Lautenschläger,late_n2,0,0,1,1,0,0
+ecb_2108,2018-05-14,Benoît Cœuré,late_n4,1,1,1,1,0,1
+ecb_0156,2000-09-23,Willem F. Duisenberg,early_n3,1,1,1,0,0,0
+ecb_2717,2025-06-11,Christine Lagarde,late_n2,0,1,0,1,0,-1
+ecb_0688,2006-12-20,Jean-Claude Trichet,early_n3,1,1,0,1,1,0
+ecb_2562,2023-06-01,Luis de Guindos,late_n4,1,1,1,1,0,-1
+ecb_0351,2003-06-16,Willem F. Duisenberg,early_n4,1,1,1,1,0,0
+ecb_2036,2017-10-17,Vítor Constâncio,late_n4,1,1,1,1,1,1
+ecb_2133,2018-09-06,Yves Mersch,late_n3,1,0,1,1,0,0
+ecb_0923,2008-10-10,Lorenzo Bini Smaghi,early_n3,1,1,1,0,0,0
+ecb_2113,2018-05-17,Vítor Constâncio,late_n4,1,1,1,1,0,-1
+ecb_0801,2007-11-26,Gertrude Tumpel-Gugerell,early_n2,1,1,0,0,0,0
+ecb_2128,2018-07-10,Sabine Lautenschläger,late_n2,0,0,1,1,0,0
+ecb_2383,2021-03-18,Luis de Guindos,late_n1,0,0,1,0,0,0
+ecb_1899,2016-11-14,Peter Praet,late_n4,1,1,1,1,1,1
+ecb_0051,1999-06-17,Otmar Issing,early_n3,1,1,0,1,-1,0
+ecb_1546,2013-09-30,Yves Mersch,late_n3,0,1,1,1,0,1
+ecb_1732,2015-06-04,Yves Mersch,late_n0,0,0,0,0,0,0
+ecb_0317,2002-12-09,Otmar Issing,early_n4,1,1,1,1,0,0
+ecb_2323,2020-07-13,Fabio Panetta,late_n3,0,1,1,1,0,-1
+ecb_2388,2021-04-14,Luis de Guindos,late_n4,1,1,1,1,-1,1
+ecb_2421,2021-10-11,Philip R. Lane,late_n3,1,1,0,1,0,-1
+ecb_2297,2020-02-20,Luis de Guindos,late_n4,1,1,1,1,1,0
+ecb_0484,2004-12-03,Gertrude Tumpel-Gugerell,early_n3,1,1,0,1,0,0
+ecb_0418,2004-05-10,Otmar Issing,early_n4,1,1,1,1,0,-1
+ecb_0623,2006-05-22,Otmar Issing,early_n2,0,1,1,0,0,1
+ecb_0988,2009-04-17,Jean-Claude Trichet,early_n4,1,1,1,1,-1,-1
+ecb_2304,2020-03-02,Luis de Guindos,late_n4,1,1,1,1,1,-1
+ecb_0496,2005-01-20,Otmar Issing,early_n2,0,0,1,1,0,0
+ecb_2202,2019-03-27,Luis de Guindos,late_n4,1,1,1,1,-1,-1
+ecb_2638,2024-06-07,Isabel Schnabel,late_n4,1,1,1,1,0,1
+ecb_0451,2004-09-23,Jean-Claude Trichet,early_n4,1,1,1,1,-1,1
+ecb_2285,2020-01-08,Luis de Guindos,late_n3,0,1,1,1,0,1
+ecb_0827,2008-01-24,Lorenzo Bini Smaghi,early_n3,1,0,1,1,0,0
+ecb_2259,2019-10-28,Mario Draghi,late_n3,1,1,0,1,-1,1
+ecb_0114,2000-02-24,Christian Noyer,early_n2,1,1,0,0,1,1
+ecb_0788,2007-10-21,Lorenzo Bini Smaghi,early_n4,1,1,1,1,0,0
+ecb_1684,2014-11-21,Mario Draghi,late_n4,1,1,1,1,-1,-1
+ecb_0689,2007-01-15,Gertrude Tumpel-Gugerell,early_n3,1,1,1,0,0,1
+ecb_0917,2008-09-22,Jean-Claude Trichet,early_n2,1,1,0,0,1,0
+ecb_0214,2001-06-29,Christian Noyer,early_n1,0,1,0,0,0,1
+ecb_1887,2016-10-12,Benoît Cœuré,late_n3,0,1,1,1,0,1
+ecb_1819,2016-03-01,Sabine Lautenschläger,late_n3,0,1,1,1,0,-1
+ecb_0944,2008-11-21,José Manuel González-Páramo,early_n4,1,1,1,1,-1,-1
+ecb_0618,2006-05-08,Lorenzo Bini Smaghi,early_n4,1,1,1,1,0,0
+ecb_1591,2014-01-30,Benoît Cœuré,late_n3,1,1,1,0,0,0
+ecb_1093,2010-03-10,Jean-Claude Trichet,early_n0,0,0,0,0,0,0
+ecb_2337,2020-09-28,Isabel Schnabel,late_n3,0,1,1,1,0,-1
+ecb_1139,2010-06-18,Jean-Claude Trichet,early_n3,1,1,1,0,0,0
+ecb_0092,1999-11-15,Eugenio Domingo Solans,early_n3,1,1,1,0,0,1
+ecb_0049,1999-06-11,Sirkka Hämäläinen,early_n2,1,1,0,0,0,0
+ecb_2664,2024-10-28,Frank Elderson,late_n2,0,1,1,0,0,-1
+ecb_0223,2001-09-05,Tommaso Padoa-Schioppa,early_n1,0,0,1,0,0,0

@@ -1,0 +1,9 @@
+variable,label,kind,n_llm,n_dictionary,n_shared,llm_only,dictionary_only,shared_ids
+inflation_attention,Inflation attention,false positive,3,3,2,ecb_0611,ecb_1458,ecb_0412 ecb_1229
+inflation_attention,Inflation attention,false negative,0,0,0,,,
+growth_attention,Growth attention,false positive,2,9,2,,ecb_0411 ecb_0412 ecb_1107 ecb_1633 ecb_1685 ecb_1954 ecb_2309,ecb_1458 ecb_1897
+growth_attention,Growth attention,false negative,0,2,0,,ecb_0176 ecb_1322,
+financial_stability_attention,Financial stability attention,false positive,0,4,0,,ecb_0411 ecb_0412 ecb_2138 ecb_2743,
+financial_stability_attention,Financial stability attention,false negative,0,1,0,,ecb_1322,
+uncertainty_attention,Uncertainty attention,false positive,0,3,0,,ecb_1633 ecb_1954 ecb_2682,
+uncertainty_attention,Uncertainty attention,false negative,0,6,0,,ecb_0611 ecb_1322 ecb_1433 ecb_1643 ecb_1912 ecb_2309,

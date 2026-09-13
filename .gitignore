@@ -1,0 +1,43 @@
+# Python virtual environment
+.venv/
+
+# Python generated files
+__pycache__/
+*.pyc
+
+# API keys and environment variables
+.env
+
+# Raw downloaded data (downloaded by src/download_data.py)
+data/raw/*
+
+# Processed data containing ECB speech text
+data/processed/*
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Generated LLM outputs during testing
+outputs/extracted_signals/
+
+# Generated test samples containing full ECB speech text
+outputs/test_sample/
+
+# Production input containing ECB text
+outputs/production/
+
+# Manual audit files containing ECB speech text
+outputs/audit/
+
+# Derived speech-level panel (regenerate with analysis/10_panel.py)
+outputs/panel/speech_panel.csv
+
+# Derived communication-macro panel (regenerate with analysis/13_external_validation.py)
+outputs/panel/communication_macro_quarterly.csv
+
+# Stray R session file
+.Rhistory

@@ -1,0 +1,7 @@
+pandas
+requests
+matplotlib
+pydantic
+groq
+python-dotenv
+openai

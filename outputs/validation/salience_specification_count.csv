@@ -1,0 +1,5 @@
+category,n_specifications,in_holm_family,detail
+pre-registered pairs,5,True,att_fs vs ciss_ci (+1); att_unc vs spf_disp_rgdp (+1); att_y vs d2_unemployment (+1); out_y vs d2_unemployment (-1); att_pi vs abs_hicp_gap (+1)
+length-adjusted re-estimations,5,False,"every pre-registered pair re-estimated with mean_log_words and share_truncated partialled out of the measure; re-estimations of pairs already in the family, not new hypotheses"
+alternative operationalisations,4,False,att_fs vs ciss_cin (CISS published as the New CISS); att_unc vs spf_disp_hicp (dispersion of inflation rather than growth forecasts); att_pi vs hicp_gap (signed rather than absolute deviation from target); att_y vs unemployment (unemployment level rather than change)
+total correlations estimated,14,False,"every correlation this script computes; no pair was dropped, and no additional specification was run and discarded"

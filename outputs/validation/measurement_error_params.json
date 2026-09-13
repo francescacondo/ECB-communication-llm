@@ -1,0 +1,72 @@
+{
+  "source": {
+    "human_file": "data/human/human_audit_30.csv",
+    "signals_file": "outputs/extracted_signals/ecb_signals_gpt5mini_v1.csv",
+    "n_validation_speeches": 30,
+    "n_bootstrap": 10000,
+    "bootstrap_seed": 20250824
+  },
+  "caveats": [
+    "Validation sample is n=30 and coded by a single coder.",
+    "The coding sheet displayed the LLM labels, so agreement is an upper bound until a blind replication is run.",
+    "The 30 speech ids were not drawn by a seeded script."
+  ],
+  "variables": {
+    "inflation_attention": {
+      "sensitivity": 1.0,
+      "specificity": 0.85,
+      "sensitivity_ci": [
+        0.6915028921812392,
+        1.0
+      ],
+      "specificity_ci": [
+        0.6210731734546859,
+        0.9679290628145363
+      ],
+      "n_true_one": 10,
+      "n_true_zero": 20
+    },
+    "growth_attention": {
+      "sensitivity": 1.0,
+      "specificity": 0.8571428571428571,
+      "sensitivity_ci": [
+        0.7940927857921773,
+        1.0
+      ],
+      "specificity_ci": [
+        0.5718708390903009,
+        0.9822054845168084
+      ],
+      "n_true_one": 16,
+      "n_true_zero": 14
+    },
+    "financial_stability_attention": {
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "sensitivity_ci": [
+        0.8235330881930345,
+        1.0
+      ],
+      "specificity_ci": [
+        0.7150858470818455,
+        1.0
+      ],
+      "n_true_one": 19,
+      "n_true_zero": 11
+    },
+    "uncertainty_attention": {
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "sensitivity_ci": [
+        0.8235330881930345,
+        1.0
+      ],
+      "specificity_ci": [
+        0.7150858470818455,
+        1.0
+      ],
+      "n_true_one": 19,
+      "n_true_zero": 11
+    }
+  }
+}

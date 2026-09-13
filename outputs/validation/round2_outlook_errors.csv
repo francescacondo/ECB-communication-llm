@@ -1,0 +1,3 @@
+variable,label,n_disagree,forced_by_attention,independent,directional_to_neutral,neutral_to_directional,sign_reversals
+inflation_outlook,Inflation outlook,7,1,6,6,0,1
+growth_outlook,Growth outlook,19,6,13,16,3,0

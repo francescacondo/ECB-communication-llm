@@ -1,0 +1,13 @@
+variable,label,coder,agreement,kappa
+inflation_attention,Inflation attention,1,0.84,0.6721311475409836
+inflation_attention,Inflation attention,2,0.82,0.6399999999999999
+growth_attention,Growth attention,1,0.84,0.6062992125984251
+growth_attention,Growth attention,2,0.86,0.626865671641791
+financial_stability_attention,Financial stability,1,0.7,0.3999999999999999
+financial_stability_attention,Financial stability,2,0.8,0.5535714285714287
+uncertainty_attention,Uncertainty,1,0.6,0.24698795180722882
+uncertainty_attention,Uncertainty,2,0.58,0.1910631741140215
+inflation_outlook,Inflation outlook,1,0.76,0.5184590690208668
+inflation_outlook,Inflation outlook,2,0.76,0.47229551451187335
+growth_outlook,Growth outlook,1,0.68,0.45392491467576795
+growth_outlook,Growth outlook,2,0.64,0.38817131203263094

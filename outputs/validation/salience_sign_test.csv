@@ -1,0 +1,2 @@
+n_pairs,n_correct_sign,p_one_sided,note
+5,5,0.03125,"exact binomial, signs fixed before estimation; lower bound because targets are correlated"

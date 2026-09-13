@@ -1,0 +1,7 @@
+variable,label,quantity,llm,dictionary,difference
+inflation_attention,Inflation attention,share coded 1,0.5991902834008097,0.5984541774015458,-0.0007361059992638808
+inflation_outlook,Inflation outlook,share coded 0,0.6878910563121089,0.6838424733161576,-0.004048582995951344
+growth_attention,Growth attention,share coded 1,0.813029076186971,0.813029076186971,0.0
+growth_outlook,Growth outlook,share coded 0,0.45086492454913507,0.4431358115568642,-0.007729112992270859
+financial_stability_attention,Financial stability attention,share coded 1,0.7136547662863453,0.6694884063305115,-0.044166359955833734
+uncertainty_attention,Uncertainty attention,share coded 1,0.5590725064409275,0.5590725064409275,0.0

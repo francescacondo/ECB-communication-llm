@@ -1,0 +1,17 @@
+kind,a,b,n_quarters,correlation
+measure,att_fs,att_unc,108,0.42356995138606546
+measure,att_pi,att_y,108,0.39373832554700494
+measure,att_fs,att_y,108,0.10470207442225478
+measure,att_pi,out_y,108,0.05616691699419859
+measure,att_pi,att_unc,108,0.05511007242077943
+measure,att_unc,att_y,108,0.041915790458640266
+measure,att_y,out_y,108,-0.014203395932809134
+measure,att_fs,out_y,108,-0.35359123123858055
+measure,att_fs,att_pi,108,-0.4357597266079315
+measure,att_unc,out_y,108,-0.540624209023942
+target,ciss_ci,d2_unemployment,102,0.6854775602772941
+target,abs_hicp_gap,spf_disp_rgdp,106,0.32234552104175623
+target,abs_hicp_gap,ciss_ci,106,0.2847866926835704
+target,ciss_ci,spf_disp_rgdp,106,0.20279207165063715
+target,d2_unemployment,spf_disp_rgdp,102,0.06906816624727158
+target,abs_hicp_gap,d2_unemployment,102,-0.010079921818093376

@@ -1,0 +1,7 @@
+specification,sample,target_label,n_quarters,correlation,hac_se,p_value,hac_lags
+Quarterly-average policy rate,1999-2011,"Deposit rate (avg), 2q change",52,0.3541584050921376,0.1391182585628608,0.014034076135822365,3
+Quarterly-average policy rate,2012-2025,"Deposit rate (avg), 2q change",54,0.4301388405221786,0.2552741833057273,0.09798041915145639,3
+English-language speeches only,1999-2011,HICP inflation,52,0.2893606660705646,0.18656961486600593,0.1272202157840202,3
+English-language speeches only,2012-2025,HICP inflation,56,0.24218214021849488,0.2283221422807395,0.2935457966402095,3
+English-language speeches only,1999-2011,"Deposit rate, 2q change",52,0.22618082253136984,0.1860733252887589,0.22986598978552475,3
+English-language speeches only,2012-2025,"Deposit rate, 2q change",54,0.47650381394159014,0.2735068241784666,0.08738554600907984,3

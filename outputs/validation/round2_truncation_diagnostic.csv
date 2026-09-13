@@ -1,0 +1,5 @@
+variable,label,fn_total,fn_truncated,fp_total,fp_truncated,share_truncated
+inflation_attention,Inflation attention,0,0,10,8,0.6833333333333333
+growth_attention,Growth attention,0,0,14,10,0.6833333333333333
+financial_stability_attention,Financial stability,0,0,14,13,0.6833333333333333
+uncertainty_attention,Uncertainty,0,0,20,17,0.6833333333333333

@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{LLM and keyword dictionary against hand-coded speeches}
+\label{tab:dictionary-benchmark}
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{Agreement} & \multicolumn{2}{c}{Cohen's $\kappa$} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Variable & LLM & Dictionary & LLM & Dictionary \\
+\midrule
+Inflation attention & 0.900 & 0.900 & 0.791 & 0.791 \\
+Inflation outlook & 0.933 & 0.833 & 0.773 & 0.479 \\
+Growth attention & 0.933 & 0.633 & 0.865 & 0.240 \\
+Growth outlook & 0.900 & 0.467 & 0.825 & 0.167 \\
+Financial stability attention & 1.000 & 0.833 & 1.000 & 0.619 \\
+Uncertainty attention & 1.000 & 0.700 & 1.000 & 0.389 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.86\textwidth}
+\vspace{0.6em}
+\footnotesize Thirty speeches hand-coded against \texttt{docs/coding\_rules.md}. Both instruments read the same truncated excerpts and are scored by identical code. The dictionary's decision thresholds are calibrated to reproduce the LLM's base rates on the baseline sample, which is information a standalone dictionary would not have; the comparison is therefore generous to the baseline. $\kappa$ is undefined where a coder uses a single category throughout. The hand coding was not blind and n = 30, so these are indicative rather than precise.
+\end{minipage}
+\end{table}

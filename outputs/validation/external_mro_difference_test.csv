@@ -1,0 +1,2 @@
+measure,measure_label,target,target_label,corr_early,corr_late,difference,hac_se,t_stat,p_value,ci_low,ci_high,n_quarters,hac_lags
+out_pi,Inflation outlook,d2_mro,"MRO rate, 2q change",0.17090161912794047,0.5113262266642928,0.3404246075363522,0.33996146822027995,1.0013623288500806,0.3190213241505364,-0.32588763156254064,1.006736846635245,106,4

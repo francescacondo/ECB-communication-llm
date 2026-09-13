@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{Positive classification rates by coder, fifty-three shared speeches}
+\label{tab:base-rates}
+\begin{tabular}{lccc}
+\toprule
+Variable & Coder A & Coder B & Model \\
+\midrule
+Inflation attention & 0.491 & 0.736 & 0.660 \\
+Growth attention & 0.585 & \textbf{0.868} & 0.830 \\
+Financial stability & 0.509 & \textbf{0.868} & 0.755 \\
+Uncertainty & 0.321 & \textbf{0.868} & 0.660 \\
+\addlinespace
+Inflation outlook & 0.170 & 0.132 & 0.283 \\
+Growth outlook & 0.321 & 0.491 & 0.547 \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.5em}
+\begin{minipage}{0.9\textwidth}
+{\footnotesize The first four rows report the share of speeches coded one. The outlook variables are ternary, so the last two report the share coded directionally rather than neutral. Bold marks the three variables on which coder B codes one in $86.8\%$ of speeches, against $32.1$ to $58.5\%$ for coder A. On forty-one of the fifty-three speeches coder B read only the 2,000-word excerpt while coder A read the full speech, so the gap mixes a difference in threshold with a difference in text --- but coder B saw \emph{less} text and still coded \emph{more} ones, which runs against the text explanation rather than with it.}
+\end{minipage}
+\end{table}

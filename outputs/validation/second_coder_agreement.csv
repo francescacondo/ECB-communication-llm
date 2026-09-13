@@ -1,0 +1,7 @@
+variable,n,n_agree,agreement,model_mean,second_mean
+inflation_attention,20,14,0.7,0.6,0.3
+growth_attention,20,15,0.75,0.75,0.5
+financial_stability_attention,20,16,0.8,0.8,0.6
+uncertainty_attention,20,13,0.65,0.65,0.3
+inflation_outlook,20,18,0.9,0.1,0.05
+growth_outlook,20,15,0.75,0.0,-0.05
