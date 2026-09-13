@@ -6,6 +6,9 @@ focus is on measurement: how text classifications can be constructed,
 validated, and assessed before being used as variables in economic
 analysis.
 
+The main project write-up is **ECB-communication-llm.pdf**⁠￼, which documents the methodology, 
+validation exercises, results, and limitations in full.
+
 The corpus consists of 2,770 speeches from the ECB's official
 precompiled speech dataset, covering January 1999 to December 2025. Six
 variables are extracted from each speech under a fixed coding scheme:
